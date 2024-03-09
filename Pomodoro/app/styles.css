@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #301B3F;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    flex-direction: column;
+}
+
+header {  
+    text-align: center;
+    background-color: #151515;
+    
+}
+
+.logo img {
+    width: 160px;
+}
+
+.nav-list ul {
+    padding-left: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+.nav-list ul li {
+   list-style-type: none;
+   margin: 0;
+   display: inline-block;
+}
+
+.nav-list ul li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 5px;
+    transition: padding-bottom 0.3s ease;
+}
+
+.nav-list ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li:hover a {
+    padding-bottom: 10px;
+}
+
+.nav-list li:hover a::after {
+    background-color: #8a2be2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px); /* Adjust based on header height */
+}
+
+.timer-container {
+    background-color: #3C415C;
+    border-radius: 5px;
+    padding: 100px;
+    margin: 100px;
+}
+
+.task-container {
+    position: absolute;
+    top: 530px; /* Sesuaikan jarak dari atas sesuai kebutuhan */
+    left: 50%; /* Letakkan di tengah */
+    transform: translateX(-50%);
+    width: 522px;
+    height: 262px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+.timer {
+    text-align: center;
+}
+
+#countdown {
+    font-size: 2rem;
+}
+
+#countdown span {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: lightblue;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+#startBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: darkviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    background-color: #8a2be2;
+}
+
+textarea {
+    width: 100%;
+    height: calc(100% - 40px); /* Sesuaikan padding dengan 20px di atas dan 20px di bawah */
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+}
