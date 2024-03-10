@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    border-bottom: 2px solid #B4A5A5 ;
+    width: 522px;
+    text-align: center;
+}
+
+body {
+    background-color: #301B3F;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    flex-direction: column;
+}
+
+header {  
+    text-align: center;
+    background-color: #151515;
+    height: 70px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+.nav-list ul li {
+   list-style-type: none;
+   margin: 0;
+   display: inline-block;
+}
+
+.nav-list ul li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 20px ;
+    transition: padding 0.3s ease;
+}
+
+.nav-list ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li:hover a {
+    padding-bottom: 10px;
+}
+
+.nav-list li:hover a::after {
+    background-color: #3C415C;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 150px);
+}
+
+.timer-container,
+.task-container {
+    width: 100%;
+    max-width: 522px;
+    background-color: #3C415C;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1.5px solid #B4A5A5;
+}
+
+.timer {
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.task {
+    display: inline-block;
+    width: 522px;
+    height: 215px;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: #3C415C;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px; 
+}
+
+#countdown {
+    font-size: 2rem;
+}
+
+#countdown span {
+    width: 522px;
+    height: 315px;
+    font-size: 4rem;
+    position: center;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+#countdown .separator {
+    font-size: 5rem;
+}
+
+#countdown-task {
+    display: flex;
+    flex-direction: column;
+}
+
+#countdown-task div {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#countdown-task label, #countdown-task span {
+    color: white;
+    margin-right: 10px;
+}
+
+#countdown-task input[type="checkbox"] {
+    margin-left: 0;
+}
+
+#startBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #B4A5A5;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    background-color: #301B3F;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    font-size: 1rem;
+    background-color: #B4A5A5;
+    color: #301B3F;
+    text-align: center;
+    padding: 5rem;
+}
