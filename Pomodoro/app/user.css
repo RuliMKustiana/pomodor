@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #301B3F;
+}
+
+header {  
+    text-align: center;
+    background-color: #151515;
+    height: 70px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 870px;
+    height: 481px;
+    background-color: #3C415C;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.profile-container,
+.history-container {
+    width: 100%;
+    max-width: 722px;
+    background-color: #b4a5a5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    text-align: left;
+    font-size: 0.8rem;
+    color: black;
+}
+
+.profile-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.history-container h2 {
+    text-align: left;
+    color: black;
+}
+
+.history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-list li {
+    margin-bottom: 10px;
+    color: black;
+}
